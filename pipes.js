@@ -36,7 +36,6 @@ class Pipes {
     }
 
     addPipe() {
-        console.log("addpipe");
         let rand = Math.random();
         this.pipes.push({x: 500, y: 0, width: 50, height:100 + (rand * 200)});
         this.pipes.push({x: 500, y: 100 + (rand * 200) + this.gap, width: 50, height: 500 - 100 + (rand * 200) + this.gap });
