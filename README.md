@@ -1,3 +1,4 @@
-#genetic-birds
+# genetic-birds
 
-gh-pages: lhedeby.github.io/genetic-birds/
+## gh-pages: 
+http://lhedeby.github.io/genetic-birds/
