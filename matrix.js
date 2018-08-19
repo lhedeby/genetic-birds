@@ -22,10 +22,13 @@ class Matrix {
         }
 
         
-        //activation; sigmoid;
-        ans = ans.map(x => 1 / (1 + Math.exp(-x)));
+        //activation; 
+        //sigmoid;
+        //ans = ans.map(x => 1 / (1 + Math.exp(-x)));
         //tanh
-        //ans = ans.map(x => Math.tanh(x));
+        ans = ans.map(x => Math.tanh(x));
+        //binary step;
+        //ans = ans.map(x => x < 0 ? 0: 1);
         
         return ans;
     }

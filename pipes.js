@@ -1,19 +1,14 @@
 class Pipes {
-
-
-
     constructor() {
         this.gap = 150;
         this.pipes = [];
         this.addPipe();
-        this.distanceBetweenPipes = 250;
+        this.distanceBetweenPipes = 150;
         this.count = 0;
     }
 
     update() {
-        // if(this.pipes.length === 0) {
-        //     this.addPipe();
-        // }
+
         if(this.count++ > this.distanceBetweenPipes) {
             this.count = 0;
             this.addPipe();

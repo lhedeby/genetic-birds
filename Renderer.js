@@ -13,8 +13,10 @@ class Renderer {
     renderBirds(birds) {
         for (let b of birds) {
             if (b.alive) {
-                this.ctx.fillStyle = "red";
+                this.ctx.fillStyle = "black";
                 this.ctx.fillRect(b.x, b.y, b.width, b.height);
+                this.ctx.fillStyle = b.color;
+                this.ctx.fillRect(b.x + 1, b.y + 1, b.width - 2, b.height - 2);
             }
 
         }

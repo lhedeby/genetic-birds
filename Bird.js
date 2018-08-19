@@ -7,8 +7,9 @@ class Bird {
         this.yVel = 0;
         this.yAcc = 0.5;
         this.alive = true;
-        this.brain = new NeuralNetwork([5,5,1]);
+        this.brain = new NeuralNetwork([5,1,1]);
         this.fitness = 1;
+        this.color = "#"+((1<<24)*Math.random()|0).toString(16);
     }
 
     copy() {

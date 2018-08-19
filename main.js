@@ -1,2 +1,2 @@
-let game = new Game(100);
+let game = new Game(50);
 game.init();
